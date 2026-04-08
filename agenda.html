@@ -9,30 +9,39 @@
 </head>
 
 <body>
-
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="#" class="logo">
+      <a href="about-page.html" class="logo">
         <img src="images/VOM-Logo-removebg-preview.png" alt="VOM Aventus">
       </a>
-
       <div class="nav-menu">
-        <a href="gallery.html" class="nav-link">gallery</a>
+        <a href="activities.html" class="nav-link">activiteiten</a>
         <a href="agenda.html" class="nav-link">agenda</a>
-        <a href="#" class="nav-link">sign up</a>
+        <a href="Aanmeldingskaart-VOM-jan-24.pdf" class="nav-link">meld je aan</a>
       </div>
     </div>
   </nav>
 
-  <!-- PAGE -->
   <div class="agenda-container">
-
     <div class="agenda-layout">
 
-      <!-- LEFT: EVENTS -->
-      <div class="event-list">
+      <div class="agenda-sidebar">
+        <div class="page-header">
+          <p class="download-text">Download de planning <a href="2026-activiteitenagenda-versie-09.02.26.pdf">hier</a></p>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="search" />
+          </div>
+        </div>
 
+        <div class="filter-tags">
+          <span class="tag outside"><span class="dot"></span>buiten</span>
+          <span class="tag eten"><span class="dot"></span>eten</span>
+          <span class="tag rondleiding"><span class="dot"></span>rondleiding</span>
+          <span class="tag museum"><span class="dot"></span>museum</span>
+        </div>
+      </div>
+
+      <div class="event-list">
         <div class="event-card">
           <div class="color-bar blue-bar"></div>
           <div class="event-content">
@@ -64,32 +73,32 @@
             <p class="event-details">Jun 20 2026 • 09:00-18:00 • LAVM</p>
           </div>
         </div>
-
       </div>
-
-      <!-- RIGHT: SIDEBAR -->
-      <div class="agenda-sidebar">
-
-        <div class="page-header">
-          <p class="download-text">Download de planning <a>hier</a></p>
-
-          <div class="search-container">
-            <input type="text" class="search-input" placeholder="search" />
-          </div>
-        </div>
-
-        <div class="filter-tags">
-          <span class="tag outside"><span class="dot"></span>buiten</span>
-          <span class="tag eten"><span class="dot"></span>eten</span>
-          <span class="tag rondleiding"><span class="dot"></span>rondleiding</span>
-          <span class="tag museum"><span class="dot"></span>museum</span>
-        </div>
-
-      </div>
-
     </div>
-
   </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="images/VOM-Logo-removebg-preview.png" alt="VOM Aventus">
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:test@aventus.nl">test@aventus.nl</a></p>
+          <p>+31 06 12345679</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-location">
+          <p class="footer-title">adres</p>
+          <p>laan van mensen rechten 500</p>
+          <p>7332 AT</p>
+          <p>apeldoorn</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

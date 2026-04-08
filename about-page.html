@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="#" class="logo">
+      <a href="about-page.html" class="logo">
         <img src="images/VOM-Logo-removebg-preview.png" alt="VOM Aventus">
       </a>
       <div class="nav-menu">
-        <a href="gallery.html" class="nav-link">gallerij</a>
+        <a href="activities.html" class="nav-link">activiteiten</a>
         <a href="agenda.html" class="nav-link">agenda</a>
-        <a href="#" class="nav-link">meld je aan</a>
+        <a href="Aanmeldingskaart-VOM-jan-24.pdf" class="nav-link">meld je aan</a>
       </div>
     </div>
   </nav>
@@ -26,7 +27,7 @@
       <img src="images\gebouw Zutphen Stationsplein.jpg" alt="VOM Aventus" class="hero-image">
       <div class="hero-overlay">
         <h1 class="hero-heading">vom<br>aventus</h1>
-        <p class="hero-copy">This a descript</p>
+        <p class="hero-copy">Hier komt nog wat</p>
       </div>
     </div>
 
@@ -34,34 +35,35 @@
       <p class="quote-text">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       </p>
+      <p class="voorwarden">Bekijk onze voorwaarden <a href="Disclaimer-website-VOM-Aventus-2022.pdf">hier</a></p>
     </section>
 
     <section class="activity-grid">
       <article class="activity-card">
         <img src="images/gebouw Zutphen Stationsplein.jpg" alt="activity" class="activity-img">
         <div class="card-content">
-          <p class="activity-title">activiteit</p>
+          <a href="gallery.html" class="activity-title">activiteit</a>
           <p class="activity-date">jan 20 2026</p>
         </div>
       </article>
       <article class="activity-card">
         <img src="images/gebouw Deventer Snipperlingsdijk.jpg" alt="activity" class="activity-img">
         <div class="card-content">
-          <p class="activity-title">activiteit</p>
+          <a href="gallery.html" class="activity-title">activiteit</a>
           <p class="activity-date">jan 20 2026</p>
         </div>
       </article>
       <article class="activity-card">
         <img src="images/Aventus LVM gebouw hoofdingang.JPG" alt="activity" class="activity-img">
         <div class="card-content">
-          <p class="activity-title">activiteit</p>
+          <a href="gallery.html" class="activity-title">activiteit</a>
           <p class="activity-date">jan 20 2026</p>
         </div>
       </article>
       <article class="activity-card">
         <img src="images/VOM-Hero-header.jpeg" alt="activity" class="activity-img">
         <div class="card-content">
-          <p class="activity-title">activiteit</p>
+          <a href="gallery.html" class="activity-title">activiteit</a>
           <p class="activity-date">jan 20 2026</p>
         </div>
       </article>
@@ -85,8 +87,14 @@
     </section>
 
     <div class="gallery-button-container">
-      <button class="gallery-btn">gallerij</button>
+      <button onclick="goToActivity()" class="gallery-btn">Activiteiten</button>
     </div>
+
+  <script>
+    function goToActivity() {
+      window.location.href = "activities.html";     
+    }
+  </script>
 
     <div class="footer-spacing"></div>
   </div>

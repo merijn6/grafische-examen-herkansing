@@ -107,6 +107,11 @@ img {
   line-height: 1.7;
 }
 
+.voorwaarden{
+  padding-top: 30px;
+
+}
+
 /* ================= ACTIVITY (FLEX) ================= */
 .activity-grid {
   display: flex;
@@ -214,7 +219,9 @@ img {
   display: flex;
   margin: 0 auto;
   background: #fff;
-  padding: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
 }
 
 .download-text {
@@ -319,17 +326,28 @@ img {
 @media (min-width: 900px) {
   .agenda-layout {
     display: flex;
+    width: 100%;
     gap: 40px;
+    flex-direction: row-reverse;
     align-items: flex-start;
   }
 
   /* LEFT: events */
   .event-list {
-    flex: 2;
+    display: flex;
+    align-items: center;
+    flex: 3;
+  }
+  
+  .event-card{
+    width: 75%;
   }
 
   /* RIGHT: filters + search */
   .agenda-sidebar {
+    display: flex;
+    flex-direction: column;
+  
     flex: 1;
     position: sticky;
     top: 100px;
