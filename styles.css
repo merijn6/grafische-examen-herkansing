@@ -132,7 +132,7 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   padding: 40px var(--padding);
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .activity-card {
